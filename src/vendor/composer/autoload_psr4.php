@@ -10,5 +10,6 @@ return array(
     'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
     'Ramsey\\Collection\\' => array($vendorDir . '/ramsey/collection/src'),
     'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
+    'App\\Resource\\' => array($baseDir . '/app/Resource'),
     'App\\' => array($baseDir . '/app'),
 );

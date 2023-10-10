@@ -2,17 +2,14 @@
 
 declare(strict_types=1);
 
-
 require __DIR__ . "/../vendor/autoload.php";
+
+use App\Resource\Route;
 use App\TestController;
-use Ramsey\Uuid\UuidFactory;
 
+session_start();
 
-// $testController = new TestController();
+$route = new Route();
 
-$id = new UuidFactory();
-
-echo $id->uuid4();
-
-
-
+$route->get('/test', [TestController::class, 'store']);
+$route->resolve($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);

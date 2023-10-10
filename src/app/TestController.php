@@ -9,4 +9,8 @@ class TestController
     {
         echo "Hello World";
     }
+    public function store()
+    {
+        echo "Hello";
+    }
 }
